@@ -18,7 +18,7 @@ body{
 #kontainer-full {
     position: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .kontainer-limi{
     width: 100vw;
@@ -27,7 +27,7 @@ body{
 #topbar {
     position: fixed;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     z-index: 110;
     transition: all 0.5s;
     transition-timing-function: ease-out;
@@ -223,7 +223,7 @@ body{
 }
 ::placeholder{color: #064a1e; opacity: 0.5;}
 footer{
-  width: 100vw;
+  width: 100%;
   background-color: #0fcd52;
   height: auto;
   margin-bottom: 0;
