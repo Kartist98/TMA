@@ -1,0 +1,120 @@
+body{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+#banner{
+    height: 100%;
+    width: 100%;
+    background-color:#0fcd52;
+}
+#banner .row{
+    height: 100%;
+}
+#banner img{
+    width: 80%;
+    max-width: 1000px;
+    margin-left: 10%;
+    padding: 0 auto;
+}
+#scroll-down{
+	  bottom: 15px;
+    height: 20px;
+    left: 0%;
+    position: absolute;
+}
+#top-content{
+    margin-top: -70px;
+}
+#page-content{
+    text-align: justify;
+    margin-top: 70px;
+    padding-top: 30px;
+}
+.kontainer-limi img{
+    width: 100%;
+    margin-bottom: 15px
+}
+.kontainer-limi p{
+    margin-bottom: 30px
+}
+form{
+  padding: 15px;
+}
+#name, #email{
+  font-size: 12pt;
+  color: #064a1e;
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: #52f28b;
+  margin-bottom: 15px;
+  padding: 0;
+  transition: all 0.25;
+  background-color: white;
+}
+#name:hover, #name:focus,
+#email:hover, #email:focus,
+#feedback:hover, #feedback:focus{
+  border-color: #0fcd52;
+}
+#space{width:15px;}
+#feedback{
+  font-size: 12pt;
+  color: #064a1e;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #52f28b;
+  padding: 15px;
+  transition: all 0.25;
+  min-height: 200px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+form button{
+  border: solid;
+  border-color: #0fcd52;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #0fcd52;
+  font-family: SairaBold;
+  transition: all 0.25s;
+  background-color: white;
+}
+form button:hover{
+  background-color: #0fcd52;
+  color: white;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .kontainer-limi .row img{
+      margin-bottom: 30px
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #scroll-down{
+      height: 30px;
+      bottom: 30px;
+  }
+  #page-content{
+      margin-top: 70px;
+      padding-top: 60px;
+  }
+  #kform{
+      padding: 30px
+  }
+  #name, #email, #feedback{
+    margin-bottom: 30px;
+  }
+  #space{width: 30px;}
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

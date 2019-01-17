@@ -1,0 +1,316 @@
+@font-face {
+    font-family: SairaRegular;
+    src: url(../fonts/Saira-Regular.ttf);
+}
+@font-face {
+    font-family: SairaBold;
+    src: url(../fonts/Saira-Bold.ttf);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+body{
+  font-family: SairaRegular;
+  font-size: 12pt;
+  color: #064a1e;
+}
+
+#kontainer-full {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.kontainer-limi{
+    width: 100vw;
+    padding: 0 15px;
+}
+#topbar {
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    z-index: 110;
+    transition: all 0.5s;
+    transition-timing-function: ease-out;
+    background-color: #0fcd52;
+}
+#logo{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+#show-menu{
+    position: absolute;
+    font-size: 26px;
+    top: 22px;
+    right: 15px;
+    color: white;
+    transition: all 0.4s;
+    z-index: 112;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+#hide-menu{
+    position: absolute;
+    z-index: 112;
+    top: 25px;
+    right: 15px;
+    transition: all 0.4s;
+    height: 20px;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+#show-menu:hover{
+    transform: rotateZ(180deg);
+}
+#hide-menu:hover{
+    transform: rotateZ(240deg);
+    transform-origin: 36% 50%;
+}
+#menu{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    z-index: 111;
+    box-shadow: 0px 0px 5px 0px #323232;
+    min-height: 100vh;
+    width: auto;
+    background-color: #064a1e;
+    transition: all 0.4s;
+    transition-timing-function: ease-out;
+}
+#menu-title{
+    height: 70px;
+    color: white;
+    font-family: SairaBold;
+    font-size: 20px;
+    padding: 20px 30px;
+    transition: all 0.5;
+    transition-timing-function: ease-out;
+}
+#menu-list{
+    list-style-type:none;
+    padding: 0px;
+    overflow-y: scroll;
+    transition: all 0.5;
+    transition-timing-function: ease-out;
+}
+#menu-list li{
+    display:block;
+    position: static;
+    padding: 20px 15px 20px 30px;
+    transition: all 0.25s;
+}
+#menu-list li:hover{
+    background-color: #075322left: 30px;;
+}
+#menu-list li.active{
+    background-color: #096f2d;
+}
+#menu-list img{
+    position: absolute;
+    margin-left: -30px;
+}
+#menu-list li a{
+    color: white;
+    font-size: 20px;
+}
+#mess, #call{
+    width: 40px;
+    position: fixed;
+    left: 15px;
+    border-radius: 5px;
+    opacity: 0.6;
+    box-shadow: 0px 0px 6px 0px #323232;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 110;
+}
+#mess{bottom: 70px;}
+#call{bottom: 15px;}
+#mess:hover, #mess:active, #call:hover, #call:active{
+    opacity: 1;
+}
+#ib{
+    position: fixed;
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 0px 6px 0px #323232;
+    bottom: -335px;
+    margin-bottom: 15px;
+    left: 70px;
+    border-radius: 5px;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #eaf6ee;
+    transition: all 0.3s;
+    transition-timing-function: ease-out;
+
+}
+#ib-title{
+    background-color: #064a1e;
+    height: auto;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 6px 0px #323232;
+    cursor: pointer;
+}
+#ib-title p{
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    font-family: SairaBold;
+}
+#ib-title i{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 20px;
+    color: white;
+
+}
+#input-bg{
+    position: absolute;
+    height: auto;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 10px 10px 10px;
+}
+#input-bg button{
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding: 0;
+}
+#input-bg button img{
+    height: 15px;
+}
+#ib-content{
+    height: 211px;
+    padding: 10px;
+}
+#ib-content p{
+    font-size: 11pt;
+    padding: 5px;
+    border-radius: 5px;
+    width: auto;
+    margin-bottom: 10px;
+}
+.sp-mess{
+    background-color: white;
+    float: left;
+    color: #064a1e;
+}
+.usr-mess{
+    background-color: #0fcd52;
+    float: right;
+    color: white;
+}
+#ib input{
+    width: 100%;
+    font-size: 11pt;
+    color: #064a1e;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #0fcd52;
+    padding-right: 20px;
+}
+::placeholder{color: #064a1e; opacity: 0.5;}
+footer{
+  width: 100vw;
+  background-color: #0fcd52;
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 30px;
+  padding: 15px;
+  color: white;
+}
+footer p{
+  color: white;
+  margin: 0;
+}
+footer img{
+  height: 30px;
+  border-radius: 5px;
+}
+#facebook, #twitter{
+  padding: 0;
+  margin-right: 15px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+#topbar {
+    height: 120;
+    padding: 30px;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    top: 30px;
+    left: 30px;
+}
+#show-menu{
+    font-size: 39px;
+    top: 41px;
+    right: 30px;
+}
+#hide-menu{
+    top: 45px;
+    right: 30px;
+    transition: all 0.4s;
+    height: 30px;
+}
+#menu-title{
+    height: 120px;
+    color: white;
+    font-family: SairaBold;
+    font-size: 20px;
+    padding: 45px 30px;
+}
+#mess{left: 30px; bottom: 100px;}
+#call{left: 30px; bottom: 30px;}
+#ib{
+    margin-bottom: 30px;
+    left: 100px;
+}
+.kontainer-limi{
+    padding: 0px 30px;
+}
+footer{
+  margin-top: 60px;
+  padding: 30px;
+}
+#facebook{margin-right: 30px;}
+#twitter{margin-right: 15px;}
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .kontainer-limi{
+      max-width: 1200px;
+      margin: auto;
+  }
+}
+
+/* show menu width */
+@media (min-width: 2000px) {
+#menu{
+    right:0;
+}
+}
